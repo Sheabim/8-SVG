@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url("svgs/background.svg");
+}
+/* Background PNG is replaced in CSS with the background SVG */
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+   padding:10px;
+   font-size: 20px;
+
+}
+
+
+
+.icon {
+    fill: #39add1;
+  }
+
+
+a:hover {
+   color: #111;
+   /* transform: scale(1.1); */
+}
+
+a:hover .icon {
+   fill: #111;
+
+}
+
+
+li:hover .icon {
+  fill: #111;
+  animation: bounceIn 1s ease-out backwards;
+}
+
+
+.st2{
+  stroke: #F4C6A6;
+  stroke-width: 3;
+}
+
+
+
+/* .letter{
+
+animation: spin 1s linear;
+
+} */
+ /* @keyframes spin {
+  0% {
+    transform: rotate(0) scale(0);
+  }
+
+100% {
+         transform: rotate(360deg);
+
+    }
+} */
+
+/* A CSS transition is added to the logo SVG */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.st0 {
+    transform-origin: center;
+    animation:  bounceIn 1s ease-in-out 1s  forwards;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px
+  color: #39ADD1;
+
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/* The logo is the same size as the original PNG (140px x 120px) */
+#logo{
+  width: 140px;
+  height: 120px;
+}
+
+
+
+.text{
+  color: #eaaa7f;
+}
+
+.sables {
+  color:#b97f5b;;
+  /* fill:#B78366; */
+}
+
+.fawns {
+    color: #e9aa82;
+    /* fill: #e9aa82; */
+}
+
+.reds {
+  color:#834b29;
+  /* fill:#834b29; */
+}
+
+.stones {
+  color: #52595e;
+}
+
+.st1 {
+  opacity: 0;
+}
+
+
+
+@media (min-width: 425px) {
+/* Text on logo disappears and H1 tag appears when browser window is less than 425 pixels */
+ .logo-hidden  {
+   display: none;
+  }
+  .st1 {
+    opacity: 1;
+  }
+  .dogs div{
+    display: inline-block;
+    padding:10px;
+
+
+  }
+
+}
+
+
+/* @media (min-width: 815px) {
+
+
+  .logo-hidden {
+    display: none;
+  }
+  dogs div{
+
+    display: inline-block;
+    padding:30px;
+
+
+  }
+} */
